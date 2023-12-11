@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    margin-top: 10rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-form {
+    width: 300px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form h1 {
+    text-align: center;
+    color: #1d90dd;
+}
+
+.login-form h2 {
+    text-align: center;
+    color: #1d90dd;
+}
+
+#h4 {
+    text-align: center;
+    color: #1d90dd;
+}
+
+#boton {
+	border: none;
+	border-radius: 5px;
+	color: #1d90dd;
+	text-decoration: none;
+	padding: 0.5rem;
+	font-weight: bold;
+	font-size: 1rem;
+	cursor: pointer;
+    background-color: black;
+}
+
+#boton:hover {
+    background-color: #1d90dd;
+    color: black;
+}
+
+/* Fondo de videojuegos (ejemplo) */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/833984.png');
+    background-size: cover;
+    z-index: -1;
+    
+}
+
+@media (max-width: 1150px) {
+    body::before {
+        background-position: center;    
+    }
+  }
